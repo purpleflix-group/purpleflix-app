@@ -13,6 +13,12 @@
 		37D9986528356DB80081143E /* Purpleflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37D9986328356DB80081143E /* Purpleflix.xcdatamodeld */; };
 		37D9986728356DBC0081143E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D9986628356DBC0081143E /* Assets.xcassets */; };
 		37D9986A28356DBC0081143E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D9986828356DBC0081143E /* LaunchScreen.storyboard */; };
+		37D99872283573E30081143E /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D99871283573E30081143E /* ApiKey.swift */; };
+		37D99874283575CE0081143E /* TheMovieDBApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D99873283575CE0081143E /* TheMovieDBApi.swift */; };
+		37D998772835854D0081143E /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D998762835854D0081143E /* MovieRequest.swift */; };
+		37D9987A283585A30081143E /* TVRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D99879283585A30081143E /* TVRequest.swift */; };
+		37D9987C283585C50081143E /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9987B283585C50081143E /* SearchRequest.swift */; };
+		37D9987E283586090081143E /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9987D283586090081143E /* ImageRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		37D9986628356DBC0081143E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37D9986928356DBC0081143E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37D9986B28356DBC0081143E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D99871283573E30081143E /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		37D99873283575CE0081143E /* TheMovieDBApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDBApi.swift; sourceTree = "<group>"; };
+		37D998762835854D0081143E /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
+		37D99879283585A30081143E /* TVRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRequest.swift; sourceTree = "<group>"; };
+		37D9987B283585C50081143E /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		37D9987D283586090081143E /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 		37D9985928356DB80081143E /* Purpleflix */ = {
 			isa = PBXGroup;
 			children = (
+				37D99875283584C30081143E /* Api */,
+				37D99871283573E30081143E /* ApiKey.swift */,
 				37D9985A28356DB80081143E /* AppDelegate.swift */,
 				37D9985C28356DB80081143E /* SceneDelegate.swift */,
 				37D9985E28356DB80081143E /* ViewController.swift */,
@@ -65,6 +79,18 @@
 				37D9986328356DB80081143E /* Purpleflix.xcdatamodeld */,
 			);
 			path = Purpleflix;
+			sourceTree = "<group>";
+		};
+		37D99875283584C30081143E /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				37D99873283575CE0081143E /* TheMovieDBApi.swift */,
+				37D998762835854D0081143E /* MovieRequest.swift */,
+				37D99879283585A30081143E /* TVRequest.swift */,
+				37D9987B283585C50081143E /* SearchRequest.swift */,
+				37D9987D283586090081143E /* ImageRequest.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,10 +163,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D99872283573E30081143E /* ApiKey.swift in Sources */,
+				37D99874283575CE0081143E /* TheMovieDBApi.swift in Sources */,
 				37D9985F28356DB80081143E /* ViewController.swift in Sources */,
 				37D9985B28356DB80081143E /* AppDelegate.swift in Sources */,
 				37D9986528356DB80081143E /* Purpleflix.xcdatamodeld in Sources */,
+				37D9987A283585A30081143E /* TVRequest.swift in Sources */,
+				37D998772835854D0081143E /* MovieRequest.swift in Sources */,
+				37D9987C283585C50081143E /* SearchRequest.swift in Sources */,
 				37D9985D28356DB80081143E /* SceneDelegate.swift in Sources */,
+				37D9987E283586090081143E /* ImageRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
