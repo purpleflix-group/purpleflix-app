@@ -19,6 +19,9 @@
 		37D9987A283585A30081143E /* TVRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D99879283585A30081143E /* TVRequest.swift */; };
 		37D9987C283585C50081143E /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9987B283585C50081143E /* SearchRequest.swift */; };
 		37D9987E283586090081143E /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9987D283586090081143E /* ImageRequest.swift */; };
+		37D9988328358F760081143E /* TEMPFILE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9988228358F760081143E /* TEMPFILE.swift */; };
+		37D9988528358F910081143E /* TEMPFILE2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9988428358F910081143E /* TEMPFILE2.swift */; };
+		37D9988728358FA90081143E /* TEMPFILE3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9988628358FA90081143E /* TEMPFILE3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		37D99879283585A30081143E /* TVRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRequest.swift; sourceTree = "<group>"; };
 		37D9987B283585C50081143E /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
 		37D9987D283586090081143E /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		37D9988228358F760081143E /* TEMPFILE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEMPFILE.swift; sourceTree = "<group>"; };
+		37D9988428358F910081143E /* TEMPFILE2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEMPFILE2.swift; sourceTree = "<group>"; };
+		37D9988628358FA90081143E /* TEMPFILE3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEMPFILE3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +74,10 @@
 		37D9985928356DB80081143E /* Purpleflix */ = {
 			isa = PBXGroup;
 			children = (
-				37D99875283584C30081143E /* Api */,
+				37D9988128358F420081143E /* ViewModel */,
+				37D9988028358F390081143E /* View */,
+				37D9987F28358F320081143E /* Model */,
+				37D99875283584C30081143E /* Services */,
 				37D9985A28356DB80081143E /* AppDelegate.swift */,
 				37D9985C28356DB80081143E /* SceneDelegate.swift */,
 				37D9985E28356DB80081143E /* ViewController.swift */,
@@ -80,7 +89,7 @@
 			path = Purpleflix;
 			sourceTree = "<group>";
 		};
-		37D99875283584C30081143E /* Api */ = {
+		37D99875283584C30081143E /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				37D99871283573E30081143E /* ApiKey.swift */,
@@ -90,7 +99,31 @@
 				37D9987B283585C50081143E /* SearchRequest.swift */,
 				37D9987D283586090081143E /* ImageRequest.swift */,
 			);
-			path = Api;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		37D9987F28358F320081143E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37D9988228358F760081143E /* TEMPFILE.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37D9988028358F390081143E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37D9988428358F910081143E /* TEMPFILE2.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37D9988128358F420081143E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				37D9988628358FA90081143E /* TEMPFILE3.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,12 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D9988528358F910081143E /* TEMPFILE2.swift in Sources */,
+				37D9988728358FA90081143E /* TEMPFILE3.swift in Sources */,
 				37D99872283573E30081143E /* ApiKey.swift in Sources */,
 				37D99874283575CE0081143E /* TheMovieDBApi.swift in Sources */,
 				37D9985F28356DB80081143E /* ViewController.swift in Sources */,
 				37D9985B28356DB80081143E /* AppDelegate.swift in Sources */,
 				37D9986528356DB80081143E /* Purpleflix.xcdatamodeld in Sources */,
 				37D9987A283585A30081143E /* TVRequest.swift in Sources */,
+				37D9988328358F760081143E /* TEMPFILE.swift in Sources */,
 				37D998772835854D0081143E /* MovieRequest.swift in Sources */,
 				37D9987C283585C50081143E /* SearchRequest.swift in Sources */,
 				37D9985D28356DB80081143E /* SceneDelegate.swift in Sources */,
