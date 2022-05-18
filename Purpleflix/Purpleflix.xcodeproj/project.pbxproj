@@ -10,7 +10,6 @@
 		37D9985B28356DB80081143E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9985A28356DB80081143E /* AppDelegate.swift */; };
 		37D9985D28356DB80081143E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9985C28356DB80081143E /* SceneDelegate.swift */; };
 		37D9985F28356DB80081143E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9985E28356DB80081143E /* ViewController.swift */; };
-		37D9986228356DB80081143E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D9986028356DB80081143E /* Main.storyboard */; };
 		37D9986528356DB80081143E /* Purpleflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37D9986328356DB80081143E /* Purpleflix.xcdatamodeld */; };
 		37D9986728356DBC0081143E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D9986628356DBC0081143E /* Assets.xcassets */; };
 		37D9986A28356DBC0081143E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D9986828356DBC0081143E /* LaunchScreen.storyboard */; };
@@ -21,7 +20,6 @@
 		37D9985A28356DB80081143E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D9985C28356DB80081143E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		37D9985E28356DB80081143E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37D9986128356DB80081143E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37D9986428356DB80081143E /* Purpleflix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Purpleflix.xcdatamodel; sourceTree = "<group>"; };
 		37D9986628356DBC0081143E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37D9986928356DBC0081143E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 				37D9985A28356DB80081143E /* AppDelegate.swift */,
 				37D9985C28356DB80081143E /* SceneDelegate.swift */,
 				37D9985E28356DB80081143E /* ViewController.swift */,
-				37D9986028356DB80081143E /* Main.storyboard */,
 				37D9986628356DBC0081143E /* Assets.xcassets */,
 				37D9986828356DBC0081143E /* LaunchScreen.storyboard */,
 				37D9986B28356DBC0081143E /* Info.plist */,
@@ -130,7 +127,6 @@
 			files = (
 				37D9986A28356DBC0081143E /* LaunchScreen.storyboard in Resources */,
 				37D9986728356DBC0081143E /* Assets.xcassets in Resources */,
-				37D9986228356DB80081143E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		37D9986028356DB80081143E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37D9986128356DB80081143E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		37D9986828356DBC0081143E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +284,6 @@
 				INFOPLIST_FILE = Purpleflix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +311,6 @@
 				INFOPLIST_FILE = Purpleflix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
