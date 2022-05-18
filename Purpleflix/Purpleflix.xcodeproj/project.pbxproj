@@ -69,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				37D99875283584C30081143E /* Api */,
-				37D99871283573E30081143E /* ApiKey.swift */,
 				37D9985A28356DB80081143E /* AppDelegate.swift */,
 				37D9985C28356DB80081143E /* SceneDelegate.swift */,
 				37D9985E28356DB80081143E /* ViewController.swift */,
@@ -84,6 +83,7 @@
 		37D99875283584C30081143E /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				37D99871283573E30081143E /* ApiKey.swift */,
 				37D99873283575CE0081143E /* TheMovieDBApi.swift */,
 				37D998762835854D0081143E /* MovieRequest.swift */,
 				37D99879283585A30081143E /* TVRequest.swift */,
