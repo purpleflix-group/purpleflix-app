@@ -21,4 +21,18 @@ class MovieRequest {
         }
     }
     
+    static func getRecommendations(movieID: Int, page: Int? = nil, result: @escaping (_ movie: MoviePageResponse?) -> Void) {
+        let url = "https://api.themoviedb.org/3/movie/\(movieID)/recommendations"
+        var parameters = [
+            "api_key": ApiKey.themoviedbkey,
+            "language": "pt-BR"
+        ]
+        if let page = page {
+           parameters["page"] = "\(page)"
+        }
+        AF.request(url, parameters: parameters).responseDecodable(of: MoviePageResponse.self) { response in
+            result(response.value)
+        }
+    }
+    
 }

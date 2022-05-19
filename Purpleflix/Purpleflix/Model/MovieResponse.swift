@@ -10,7 +10,7 @@ import Foundation
 struct MovieResponse: Decodable {
     var backdrop_path: String?
     var budget: Int?
-    var genres: [GenresResponse]
+    var genres: [GenresResponse]?
     var id: Int?
     var imdb_id: String?
     var original_language: String?
@@ -18,6 +18,7 @@ struct MovieResponse: Decodable {
     var overview: String? //Sinopse
     var popularity: Double?
     var poster_path: String?
+    var release_date: String?
     var revenue: Int?
     var runtime: Int? //Duração do filme em minutos
     var tagline: String? //Resumo
