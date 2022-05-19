@@ -24,6 +24,7 @@
 		37E98DBB2836B1BE0027D825 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E98DBA2836B1BE0027D825 /* MovieResponse.swift */; };
 		37E98DBE2836B62C0027D825 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 37E98DBD2836B62C0027D825 /* Alamofire */; };
 		66909CC52836B75B006E45A7 /* TVResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66909CC42836B75B006E45A7 /* TVResponse.swift */; };
+		66909CC72836D8E5006E45A7 /* TVRecommendationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66909CC62836D8E5006E45A7 /* TVRecommendationsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		37D9988428358F910081143E /* TEMPFILE2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEMPFILE2.swift; sourceTree = "<group>"; };
 		37E98DBA2836B1BE0027D825 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		66909CC42836B75B006E45A7 /* TVResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVResponse.swift; sourceTree = "<group>"; };
+		66909CC62836D8E5006E45A7 /* TVRecommendationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRecommendationsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				37D9988228358F760081143E /* TEMPFILE.swift */,
 				37E98DBA2836B1BE0027D825 /* MovieResponse.swift */,
 				66909CC42836B75B006E45A7 /* TVResponse.swift */,
+				66909CC62836D8E5006E45A7 /* TVRecommendationsResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				37D9985B28356DB80081143E /* AppDelegate.swift in Sources */,
 				66909CC52836B75B006E45A7 /* TVResponse.swift in Sources */,
 				37D9986528356DB80081143E /* Purpleflix.xcdatamodeld in Sources */,
+				66909CC72836D8E5006E45A7 /* TVRecommendationsResponse.swift in Sources */,
 				37D9987A283585A30081143E /* TVRequest.swift in Sources */,
 				37D9988328358F760081143E /* TEMPFILE.swift in Sources */,
 				37D998772835854D0081143E /* MovieRequest.swift in Sources */,

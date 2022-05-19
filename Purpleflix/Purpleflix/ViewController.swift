@@ -18,6 +18,12 @@ class ViewController: UIViewController {
 //            print(tv?.id)
 //            print(tv?.name)
 //        }
+        
+//        TVRequest.getRecommendations(tvId: 2691) { tv in
+//            print(tv?.results?.first?.name)
+//            print(tv?.results?.last?.name)
+//            print(tv?.results?.count)
+//        }
     }
 
 
