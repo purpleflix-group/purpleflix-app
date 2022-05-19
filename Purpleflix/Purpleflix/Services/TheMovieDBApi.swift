@@ -7,7 +7,11 @@
 
 import Foundation
 
-class TheMovieDBApi{
+final class TheMovieDBApi{
+    
     static let movies = MovieRequest()
+    
+    private init() {
+    }
 }
 
