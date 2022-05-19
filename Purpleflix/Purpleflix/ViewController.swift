@@ -13,7 +13,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .green
-        print(ApiKey.themoviedbkey)
+        
+//        TVRequest.getDetails(tvId: 37) { tv in
+//            print(tv?.id)
+//            print(tv?.name)
+//        }
     }
 
 
