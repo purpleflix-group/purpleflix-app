@@ -8,19 +8,19 @@
 import Foundation
 import Alamofire
 
-class GeneralRequest {
+class GeneralRequest<T: Decodable> {
     
-    static func getDetails<T: Decodable>(url: String, type: T.Type, result: @escaping (_ movie: T?) -> Void) {
+    static func getDetails(url: String, result: @escaping (_ movie: T?) -> Void) {
         let parameters = [
             "api_key": ApiKey.themoviedbkey,
             "language": "pt-BR"
         ]
-        AF.request(url, parameters: parameters).responseDecodable(of: type) { response in
+        AF.request(url, parameters: parameters).responseDecodable(of: T.self) { response in
             result(response.value)
         }
     }
     
-    static func getRecommendations<T: Decodable>(url: String, type: T.Type, result: @escaping (_ movies: [T]?) -> Void) {
+    static func getRecommendations(url: String, result: @escaping (_ movies: [T]?) -> Void) {
         let parameters = [
             "api_key": ApiKey.themoviedbkey,
             "language": "pt-BR"
@@ -34,7 +34,7 @@ class GeneralRequest {
                 let json = try JSON(data: data)
                 var responses: [T] = []
                 for value in json["results"].arrayValue {
-                    let movie = try JSONDecoder().decode(type, from: value.rawData())
+                    let movie = try JSONDecoder().decode(T.self, from: value.rawData())
                     responses.append(movie)
                 }
                 result(responses)
