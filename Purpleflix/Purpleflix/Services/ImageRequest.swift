@@ -11,14 +11,14 @@ import UIKit
 
 class ImageRequest {
     
-    enum BackdropSizes: String {
+    enum BackdropSize: String {
         case w300 = "w300"
         case w780 = "w780"
         case w1280 = "w1280"
         case original = "original"
     }
     
-    enum LogoSizes: String {
+    enum LogoSize: String {
         case w45 = "w45"
         case w92 = "w92"
         case w154 = "w154"
@@ -28,7 +28,7 @@ class ImageRequest {
         case original = "original"
     }
     
-    enum PosterSizes: String {
+    enum PosterSize: String {
         case w92 = "w92"
         case w154 = "w154"
         case w185 = "w185"
@@ -38,8 +38,19 @@ class ImageRequest {
         case original = "original"
     }
     
-    static func getBackdrop(backDropSize: BackdropSizes, imagePath: String, result: @escaping (_ backDrop: UIImage?) -> Void) {
+    static func getBackdrop(for backDrop: IBackdrop, backDropSize: BackdropSize, result: @escaping (_ backDrop: UIImage?) -> Void) {
+        guard let imagePath = backDrop.backdrop_path else { return }
         getImage(imageSize: backDropSize.rawValue, imagePath: imagePath, result: result)
+    }
+    
+    static func getPoster(for poster: IPoster, posterSize: PosterSize, result: @escaping (_ backDrop: UIImage?) -> Void) {
+        guard let imagePath = poster.poster_path else { return }
+        getImage(imageSize: posterSize.rawValue, imagePath: imagePath, result: result)
+    }
+    
+    static func getLogo(for logo: ILogo, logoSize: LogoSize, result: @escaping (_ backDrop: UIImage?) -> Void) {
+        guard let imagePath = logo.logo_path else { return }
+        getImage(imageSize: logoSize.rawValue, imagePath: imagePath, result: result)
     }
     
     private static func getImage(imageSize: String, imagePath: String, result: @escaping (_ image: UIImage?) -> Void) {
