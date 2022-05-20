@@ -21,17 +21,30 @@ class MovieRequest {
         }
     }
     
-    static func getRecommendations(movieID: Int, page: Int? = nil, result: @escaping (_ movie: MoviePageResponse?) -> Void) {
+    static func getRecommendations(movieID: Int, result: @escaping (_ movie: [MovieResponse]?) -> Void) {
         let url = "https://api.themoviedb.org/3/movie/\(movieID)/recommendations"
-        var parameters = [
+        let parameters = [
             "api_key": ApiKey.themoviedbkey,
             "language": "pt-BR"
         ]
-        if let page = page {
-           parameters["page"] = "\(page)"
-        }
-        AF.request(url, parameters: parameters).responseDecodable(of: MoviePageResponse.self) { response in
-            result(response.value)
+        AF.request(url, parameters: parameters).response { response in
+            guard let data = response.data else {
+                result(nil)
+                return
+            }
+            do {
+                let json = try JSON(data: data)
+                var movies: [MovieResponse] = []
+                for value in json["results"].arrayValue {
+                    let movie = try JSONDecoder().decode(MovieResponse.self, from: value.rawData())
+                    movies.append(movie)
+                }
+                result(movies)
+            }
+            catch {
+                print("[Error][MovieRequest][getRecommendations]: \(error)")
+                result(nil)
+            }
         }
     }
     

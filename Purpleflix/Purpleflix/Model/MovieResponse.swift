@@ -24,9 +24,9 @@ struct MovieResponse: Decodable {
     var tagline: String? //Resumo
     var title: String?
     var vote_average: Double?
-}
-
-struct GenresResponse: Decodable {
-    var id: Int
-    var name: String
+    
+    struct GenresResponse: Decodable {
+        var id: Int
+        var name: String
+    }
 }

@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 //        }
         
         MovieRequest.getRecommendations(movieID: 550) { movie in
-            
+            print(movie)
         }
     }
 }
