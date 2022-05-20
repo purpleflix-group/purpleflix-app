@@ -10,7 +10,7 @@ import Alamofire
 
 class GeneralRequest {
     
-    static func getDetails<T: Decodable>(url: String, type: T.Type, result: @escaping (_ tv: T?) -> Void) {
+    static func getDetails<T: Decodable>(url: String, result: @escaping (_ tv: T?) -> Void) {
         let parameters = [
             "api_key": ApiKey.themoviedbkey,
             "language": "pt-BR"
