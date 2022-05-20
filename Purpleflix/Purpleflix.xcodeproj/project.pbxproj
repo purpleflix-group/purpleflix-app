@@ -23,7 +23,7 @@
 		37E98DBB2836B1BE0027D825 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E98DBA2836B1BE0027D825 /* MovieResponse.swift */; };
 		37E98DBE2836B62C0027D825 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 37E98DBD2836B62C0027D825 /* Alamofire */; };
 		37E98DC5283715220027D825 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E98DC4283715220027D825 /* SwiftyJSON.swift */; };
-		37E98DC728371CF90027D825 /* ProviderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E98DC628371CF90027D825 /* ProviderResponse.swift */; };
+		37E98DC728371CF90027D825 /* WatchProviderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E98DC628371CF90027D825 /* WatchProviderResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 		37D9988428358F910081143E /* TEMPFILE2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEMPFILE2.swift; sourceTree = "<group>"; };
 		37E98DBA2836B1BE0027D825 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		37E98DC4283715220027D825 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		37E98DC628371CF90027D825 /* ProviderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderResponse.swift; sourceTree = "<group>"; };
+		37E98DC628371CF90027D825 /* WatchProviderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchProviderResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				37E98DBA2836B1BE0027D825 /* MovieResponse.swift */,
-				37E98DC628371CF90027D825 /* ProviderResponse.swift */,
+				37E98DC628371CF90027D825 /* WatchProviderResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 				37E98DBB2836B1BE0027D825 /* MovieResponse.swift in Sources */,
 				37D9988528358F910081143E /* TEMPFILE2.swift in Sources */,
 				37D99872283573E30081143E /* ApiKey.swift in Sources */,
-				37E98DC728371CF90027D825 /* ProviderResponse.swift in Sources */,
+				37E98DC728371CF90027D825 /* WatchProviderResponse.swift in Sources */,
 				37E98DC5283715220027D825 /* SwiftyJSON.swift in Sources */,
 				37D99874283575CE0081143E /* TheMovieDBApi.swift in Sources */,
 				37D9985F28356DB80081143E /* ViewController.swift in Sources */,

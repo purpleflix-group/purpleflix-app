@@ -21,7 +21,7 @@ class MovieRequest {
         }
     }
     
-    static func getRecommendations(movieID: Int, result: @escaping (_ movie: [MovieResponse]?) -> Void) {
+    static func getRecommendations(movieID: Int, result: @escaping (_ movies: [MovieResponse]?) -> Void) {
         let url = "https://api.themoviedb.org/3/movie/\(movieID)/recommendations"
         let parameters = [
             "api_key": ApiKey.themoviedbkey,
@@ -48,4 +48,27 @@ class MovieRequest {
         }
     }
     
+    static func getWatchProvider(movieID: Int, region: String, result: @escaping (_ provider: WatchProviderResponse?) -> Void) {
+        let url = "https://api.themoviedb.org/3/movie/\(movieID)/watch/providers"
+        let parameters = [
+            "api_key": ApiKey.themoviedbkey,
+            "language": "pt-BR"
+        ]
+        AF.request(url, parameters: parameters).response { response in
+            guard let data = response.data else {
+                result(nil)
+                return
+            }
+            do {
+                let json = try JSON(data: data)
+                let value = json["results"][region]
+                let provider = try JSONDecoder().decode(WatchProviderResponse.self, from: value.rawData())
+                result(provider)
+            }
+            catch {
+                print("[Error][MovieRequest][getWatchProvider]: \(error)")
+                result(nil)
+            }
+        }
+    }
 }
