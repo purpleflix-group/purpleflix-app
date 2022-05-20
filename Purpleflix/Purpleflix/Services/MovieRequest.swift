@@ -48,7 +48,7 @@ class MovieRequest {
         }
     }
     
-    static func getWatchProvider(movieID: Int, region: String, result: @escaping (_ provider: WatchProviderResponse?) -> Void) {
+    static func getWatchProvider(movieID: Int, result: @escaping (_ providers: [String:WatchProviderResponse]?) -> Void) {
         let url = "https://api.themoviedb.org/3/movie/\(movieID)/watch/providers"
         let parameters = [
             "api_key": ApiKey.themoviedbkey,
@@ -61,9 +61,11 @@ class MovieRequest {
             }
             do {
                 let json = try JSON(data: data)
-                let value = json["results"][region]
-                let provider = try JSONDecoder().decode(WatchProviderResponse.self, from: value.rawData())
-                result(provider)
+                var providers: [String: WatchProviderResponse] = [:]
+                for value in json["results"] {
+                    providers[value.0] = try JSONDecoder().decode(WatchProviderResponse.self, from: value.1.rawData())
+                }
+                result(providers)
             }
             catch {
                 print("[Error][MovieRequest][getWatchProvider]: \(error)")

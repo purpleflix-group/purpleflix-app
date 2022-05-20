@@ -13,8 +13,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .green
-        MovieRequest.getWatchProvider(movieID: 550, region: "BR") { provider in
-            print(provider?.buy)
+        MovieRequest.getWatchProvider(movieID: 550) { providers in
+            print(providers)
         }
     }
 }
