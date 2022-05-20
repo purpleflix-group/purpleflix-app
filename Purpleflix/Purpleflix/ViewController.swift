@@ -16,6 +16,10 @@ class ViewController: UIViewController {
         MovieRequest.getWatchProvider(movieID: 550) { providers in
             print(providers?["BR"])
         }
+        
+        TVRequest.getWatchProvider(tvId: 34) { providers in
+            print(providers?["BR"])
+        }
     }
 }
 
