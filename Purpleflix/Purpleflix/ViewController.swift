@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .green
         MovieRequest.getWatchProvider(movieID: 550) { providers in
-            print(providers)
+            print(providers?["BR"])
         }
     }
 }

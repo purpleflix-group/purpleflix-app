@@ -8,17 +8,11 @@
 import Foundation
 import Alamofire
 
-class MovieRequest {
+class MovieRequest: GeneralRequest {
     
     static func getDetails(movieID: Int, result: @escaping (_ movie: MovieResponse?) -> Void) {
         let url = "https://api.themoviedb.org/3/movie/\(movieID)"
-        let parameters = [
-            "api_key": ApiKey.themoviedbkey,
-            "language": "pt-BR"
-        ]
-        AF.request(url, parameters: parameters).responseDecodable(of: MovieResponse.self) { response in
-            result(response.value)
-        }
+        super.getDetails(url: url, type: MovieResponse.self, result: result)
     }
     
     static func getRecommendations(movieID: Int, result: @escaping (_ movies: [MovieResponse]?) -> Void) {
@@ -50,27 +44,6 @@ class MovieRequest {
     
     static func getWatchProvider(movieID: Int, result: @escaping (_ providers: [String:WatchProviderResponse]?) -> Void) {
         let url = "https://api.themoviedb.org/3/movie/\(movieID)/watch/providers"
-        let parameters = [
-            "api_key": ApiKey.themoviedbkey,
-            "language": "pt-BR"
-        ]
-        AF.request(url, parameters: parameters).response { response in
-            guard let data = response.data else {
-                result(nil)
-                return
-            }
-            do {
-                let json = try JSON(data: data)
-                var providers: [String: WatchProviderResponse] = [:]
-                for value in json["results"] {
-                    providers[value.0] = try JSONDecoder().decode(WatchProviderResponse.self, from: value.1.rawData())
-                }
-                result(providers)
-            }
-            catch {
-                print("[Error][MovieRequest][getWatchProvider]: \(error)")
-                result(nil)
-            }
-        }
+        getWatchProvider(url: url, result: result)
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B860CE283808EE00FB072C /* GeneralRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B860CD283808EE00FB072C /* GeneralRequest.swift */; };
 		37D9985B28356DB80081143E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9985A28356DB80081143E /* AppDelegate.swift */; };
 		37D9985D28356DB80081143E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9985C28356DB80081143E /* SceneDelegate.swift */; };
 		37D9985F28356DB80081143E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9985E28356DB80081143E /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37B860CD283808EE00FB072C /* GeneralRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRequest.swift; sourceTree = "<group>"; };
 		37D9985728356DB80081143E /* Purpleflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Purpleflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D9985A28356DB80081143E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D9985C28356DB80081143E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				37D99879283585A30081143E /* TVRequest.swift */,
 				37D9987B283585C50081143E /* SearchRequest.swift */,
 				37D9987D283586090081143E /* ImageRequest.swift */,
+				37B860CD283808EE00FB072C /* GeneralRequest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				37E98DC728371CF90027D825 /* WatchProviderResponse.swift in Sources */,
 				37E98DC5283715220027D825 /* SwiftyJSON.swift in Sources */,
 				37D99874283575CE0081143E /* TheMovieDBApi.swift in Sources */,
+				37B860CE283808EE00FB072C /* GeneralRequest.swift in Sources */,
 				37D9985F28356DB80081143E /* ViewController.swift in Sources */,
 				37D9985B28356DB80081143E /* AppDelegate.swift in Sources */,
 				37D9986528356DB80081143E /* Purpleflix.xcdatamodeld in Sources */,
