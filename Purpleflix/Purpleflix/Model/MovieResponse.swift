@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MovieResponse: Decodable {
+struct MovieResponse: Decodable, IBackdrop, IPoster {
     var backdrop_path: String?
     var budget: Int?
     var genres: [GenresResponse]?

@@ -12,7 +12,7 @@ struct WatchProviderResponse: Decodable {
     var rent: [ProviderResponse]?
     var buy: [ProviderResponse]?
     
-    struct ProviderResponse: Decodable {
+    struct ProviderResponse: Decodable, ILogo {
         var logo_path: String?
         var provider_name: String?
     }
