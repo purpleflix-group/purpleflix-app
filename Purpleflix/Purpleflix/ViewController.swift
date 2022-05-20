@@ -14,10 +14,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .green
         
-//        TVRequest.getDetails(tvId: 37) { tv in
+//        GeneralRequest.getDetails(url: "https://api.themoviedb.org/3/tv/37") { tv in
 //            print(tv?.id)
 //            print(tv?.name)
 //        }
+        TVRequest.getDetailsTV(id: 37)
         
 //        TVRequest.getRecommendations(tvId: 2691) { tv in
 //            print(tv?.results?.first?.name)

@@ -25,6 +25,7 @@
 		37E98DBE2836B62C0027D825 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 37E98DBD2836B62C0027D825 /* Alamofire */; };
 		66909CC52836B75B006E45A7 /* TVResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66909CC42836B75B006E45A7 /* TVResponse.swift */; };
 		66909CC72836D8E5006E45A7 /* TVRecommendationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66909CC62836D8E5006E45A7 /* TVRecommendationsResponse.swift */; };
+		66E61A4D28380E8D0029E74B /* GeneralRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E61A4C28380E8D0029E74B /* GeneralRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		37E98DBA2836B1BE0027D825 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		66909CC42836B75B006E45A7 /* TVResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVResponse.swift; sourceTree = "<group>"; };
 		66909CC62836D8E5006E45A7 /* TVRecommendationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRecommendationsResponse.swift; sourceTree = "<group>"; };
+		66E61A4C28380E8D0029E74B /* GeneralRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				37D99879283585A30081143E /* TVRequest.swift */,
 				37D9987B283585C50081143E /* SearchRequest.swift */,
 				37D9987D283586090081143E /* ImageRequest.swift */,
+				66E61A4C28380E8D0029E74B /* GeneralRequest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				37D99874283575CE0081143E /* TheMovieDBApi.swift in Sources */,
 				37D9985F28356DB80081143E /* ViewController.swift in Sources */,
 				37D9985B28356DB80081143E /* AppDelegate.swift in Sources */,
+				66E61A4D28380E8D0029E74B /* GeneralRequest.swift in Sources */,
 				66909CC52836B75B006E45A7 /* TVResponse.swift in Sources */,
 				37D9986528356DB80081143E /* Purpleflix.xcdatamodeld in Sources */,
 				66909CC72836D8E5006E45A7 /* TVRecommendationsResponse.swift in Sources */,
