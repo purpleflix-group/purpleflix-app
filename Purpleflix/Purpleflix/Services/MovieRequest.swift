@@ -24,4 +24,5 @@ class MovieRequest {
         let url = "https://api.themoviedb.org/3/movie/\(movieID)/watch/providers"
         GeneralRequest<MovieResponse>.getWatchProvider(url: url, result: result)
     }
+    
 }
