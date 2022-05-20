@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		37B860CE283808EE00FB072C /* GeneralRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B860CD283808EE00FB072C /* GeneralRequest.swift */; };
 		37B860D22838329600FB072C /* ImageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B860D12838329600FB072C /* ImageProtocols.swift */; };
+		37B860DA283836C400FB072C /* PurpleflixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B860D9283836C400FB072C /* PurpleflixTests.swift */; };
 		37D9985B28356DB80081143E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9985A28356DB80081143E /* AppDelegate.swift */; };
 		37D9985D28356DB80081143E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9985C28356DB80081143E /* SceneDelegate.swift */; };
 		37D9985F28356DB80081143E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D9985E28356DB80081143E /* ViewController.swift */; };
@@ -29,9 +30,21 @@
 		66E61A4F28382FF60029E74B /* TVResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E61A4E28382FF60029E74B /* TVResponse.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		37B860DB283836C400FB072C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37D9984F28356DB80081143E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37D9985628356DB80081143E;
+			remoteInfo = Purpleflix;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		37B860CD283808EE00FB072C /* GeneralRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRequest.swift; sourceTree = "<group>"; };
 		37B860D12838329600FB072C /* ImageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProtocols.swift; sourceTree = "<group>"; };
+		37B860D7283836C400FB072C /* PurpleflixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurpleflixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B860D9283836C400FB072C /* PurpleflixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleflixTests.swift; sourceTree = "<group>"; };
 		37D9985728356DB80081143E /* Purpleflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Purpleflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D9985A28356DB80081143E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D9985C28356DB80081143E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +67,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		37B860D4283836C400FB072C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37D9985428356DB80081143E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,10 +93,19 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		37B860D8283836C400FB072C /* PurpleflixTests */ = {
+			isa = PBXGroup;
+			children = (
+				37B860D9283836C400FB072C /* PurpleflixTests.swift */,
+			);
+			path = PurpleflixTests;
+			sourceTree = "<group>";
+		};
 		37D9984E28356DB80081143E = {
 			isa = PBXGroup;
 			children = (
 				37D9985928356DB80081143E /* Purpleflix */,
+				37B860D8283836C400FB072C /* PurpleflixTests */,
 				37D9985828356DB80081143E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				37D9985728356DB80081143E /* Purpleflix.app */,
+				37B860D7283836C400FB072C /* PurpleflixTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +181,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		37B860D6283836C400FB072C /* PurpleflixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37B860DF283836C400FB072C /* Build configuration list for PBXNativeTarget "PurpleflixTests" */;
+			buildPhases = (
+				37B860D3283836C400FB072C /* Sources */,
+				37B860D4283836C400FB072C /* Frameworks */,
+				37B860D5283836C400FB072C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37B860DC283836C400FB072C /* PBXTargetDependency */,
+			);
+			name = PurpleflixTests;
+			productName = PurpleflixTests;
+			productReference = 37B860D7283836C400FB072C /* PurpleflixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		37D9985628356DB80081143E /* Purpleflix */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37D9986E28356DBC0081143E /* Build configuration list for PBXNativeTarget "Purpleflix" */;
@@ -181,6 +229,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					37B860D6283836C400FB072C = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 37D9985628356DB80081143E;
+					};
 					37D9985628356DB80081143E = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -203,11 +255,19 @@
 			projectRoot = "";
 			targets = (
 				37D9985628356DB80081143E /* Purpleflix */,
+				37B860D6283836C400FB072C /* PurpleflixTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		37B860D5283836C400FB072C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37D9985528356DB80081143E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +280,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		37B860D3283836C400FB072C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B860DA283836C400FB072C /* PurpleflixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37D9985328356DB80081143E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +314,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		37B860DC283836C400FB072C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37D9985628356DB80081143E /* Purpleflix */;
+			targetProxy = 37B860DB283836C400FB072C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		37D9986828356DBC0081143E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -258,6 +334,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		37B860DD283836C400FB072C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6B3W3NNQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.purpleflix-group.PurpleflixTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Purpleflix.app/Purpleflix";
+			};
+			name = Debug;
+		};
+		37B860DE283836C400FB072C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6B3W3NNQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.purpleflix-group.PurpleflixTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Purpleflix.app/Purpleflix";
+			};
+			name = Release;
+		};
 		37D9986C28356DBC0081143E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -429,6 +541,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		37B860DF283836C400FB072C /* Build configuration list for PBXNativeTarget "PurpleflixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37B860DD283836C400FB072C /* Debug */,
+				37B860DE283836C400FB072C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		37D9985228356DB80081143E /* Build configuration list for PBXProject "Purpleflix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
