@@ -13,12 +13,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .green
-        MovieRequest.getWatchProvider(movieID: 550) { providers in
-            print(providers?["BR"])
-        }
+//        MovieRequest.getWatchProvider(movieID: 550) { providers in
+//            print(providers?["BR"])
+//        }
+//        
+//        TVRequest.getWatchProvider(tvId: 34) { providers in
+//            print(providers?["BR"])
+//        }
         
-        TVRequest.getWatchProvider(tvId: 34) { providers in
-            print(providers?["BR"])
+        SearchRequest.getSearch(search: "Harry") { movie in
+            print(movie?.count) //all nil
         }
     }
 }

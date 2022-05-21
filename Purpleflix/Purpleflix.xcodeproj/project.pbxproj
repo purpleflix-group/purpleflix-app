@@ -26,6 +26,7 @@
 		37E98DBE2836B62C0027D825 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 37E98DBD2836B62C0027D825 /* Alamofire */; };
 		37E98DC5283715220027D825 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E98DC4283715220027D825 /* SwiftyJSON.swift */; };
 		37E98DC728371CF90027D825 /* WatchProviderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E98DC628371CF90027D825 /* WatchProviderResponse.swift */; };
+		6600B65A2838C55C00B8228C /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6600B6592838C55C00B8228C /* SearchResponse.swift */; };
 		66E61A4F28382FF60029E74B /* TVResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E61A4E28382FF60029E74B /* TVResponse.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		37E98DBA2836B1BE0027D825 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		37E98DC4283715220027D825 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		37E98DC628371CF90027D825 /* WatchProviderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchProviderResponse.swift; sourceTree = "<group>"; };
+		6600B6592838C55C00B8228C /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		66E61A4E28382FF60029E74B /* TVResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				37E98DBA2836B1BE0027D825 /* MovieResponse.swift */,
 				37E98DC628371CF90027D825 /* WatchProviderResponse.swift */,
 				66E61A4E28382FF60029E74B /* TVResponse.swift */,
+				6600B6592838C55C00B8228C /* SearchResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				37E98DC5283715220027D825 /* SwiftyJSON.swift in Sources */,
 				37D99874283575CE0081143E /* TheMovieDBApi.swift in Sources */,
 				37B860CE283808EE00FB072C /* GeneralRequest.swift in Sources */,
+				6600B65A2838C55C00B8228C /* SearchResponse.swift in Sources */,
 				37B860D22838329600FB072C /* ImageProtocols.swift in Sources */,
 				37D9985F28356DB80081143E /* ViewController.swift in Sources */,
 				37D9985B28356DB80081143E /* AppDelegate.swift in Sources */,

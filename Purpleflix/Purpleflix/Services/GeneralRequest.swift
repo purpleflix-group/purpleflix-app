@@ -71,5 +71,4 @@ class GeneralRequest<T: Decodable> {
             }
         }
     }
-    
 }
