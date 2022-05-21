@@ -54,7 +54,7 @@ class ImageRequest {
     }
     
     private static func getImage(imageSize: String, imagePath: String, result: @escaping (_ image: UIImage?) -> Void) {
-        let url = "http://image.tmdb.org/t/p/\(imageSize)/\(imagePath)"
+        let url = "https://image.tmdb.org/t/p/\(imageSize)\(imagePath)"
         AF.request(url).response { response in
             guard let data = response.data else {
                 result(nil)
