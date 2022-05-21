@@ -38,17 +38,17 @@ class ImageRequest {
         case original = "original"
     }
     
-    static func getBackdrop(for backDrop: IBackdrop, backDropSize: BackdropSize, result: @escaping (_ backDrop: UIImage?) -> Void) {
+    static func getBackdrop(from backDrop: IBackdrop, backDropSize: BackdropSize, result: @escaping (_ backDrop: UIImage?) -> Void) {
         guard let imagePath = backDrop.backdrop_path else { return }
         getImage(imageSize: backDropSize.rawValue, imagePath: imagePath, result: result)
     }
     
-    static func getPoster(for poster: IPoster, posterSize: PosterSize, result: @escaping (_ backDrop: UIImage?) -> Void) {
+    static func getPoster(from poster: IPoster, posterSize: PosterSize, result: @escaping (_ poster: UIImage?) -> Void) {
         guard let imagePath = poster.poster_path else { return }
         getImage(imageSize: posterSize.rawValue, imagePath: imagePath, result: result)
     }
     
-    static func getLogo(for logo: ILogo, logoSize: LogoSize, result: @escaping (_ backDrop: UIImage?) -> Void) {
+    static func getLogo(from logo: ILogo, logoSize: LogoSize, result: @escaping (_ logo: UIImage?) -> Void) {
         guard let imagePath = logo.logo_path else { return }
         getImage(imageSize: logoSize.rawValue, imagePath: imagePath, result: result)
     }

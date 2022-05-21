@@ -20,27 +20,50 @@ class PurpleflixTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testImageRequestGetBackdrop() throws {
+    func testImageRequestGetBackdrop() {
         var image: UIImage?
         let expectation = expectation(description: "MovieDetails")
         MovieRequest.getDetails(movieID: movieID) { movie in
             XCTAssertNotNil(movie)
             guard let movie = movie else { return }
-            ImageRequest.getBackdrop(for: movie, backDropSize: .original) { backDrop in
+            ImageRequest.getBackdrop(from: movie, backDropSize: .original) { backDrop in
                 image = backDrop
                 expectation.fulfill()
             }
         }
-        waitForExpectations(timeout: 10)
+        waitForExpectations(timeout: 5)
         XCTAssertNotNil(image)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-            print("Hello WOrld")
-        }   
+    func testImageRequestGetPoster() {
+        var image: UIImage?
+        let expectation = expectation(description: "MovieDetails")
+        MovieRequest.getDetails(movieID: movieID) { movie in
+            XCTAssertNotNil(movie)
+            guard let movie = movie else { return }
+            ImageRequest.getPoster(from: movie, posterSize: .original) { poster in
+                image = poster
+                expectation.fulfill()
+            }
+        }
+        waitForExpectations(timeout: 5)
+        XCTAssertNotNil(image)
+    }
+    
+    func testImageRequestGetLogo() {
+        var image: UIImage?
+        let expectation = expectation(description: "MovieDetails")
+        MovieRequest.getWatchProvider(movieID: movieID) { providers in
+            XCTAssertNotNil(providers)
+            XCTAssertNotNil(providers?["BR"]?.flatrate?.first)
+            guard let provider = providers?["BR"]?.flatrate?.first else { return }
+            ImageRequest.getLogo(from: provider, logoSize: .original) { logo in
+                image = logo
+                expectation.fulfill()
+            }
+        }
+        waitForExpectations(timeout: 5)
+        XCTAssertNotNil(image)
     }
 
 }
