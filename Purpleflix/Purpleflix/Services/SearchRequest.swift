@@ -27,6 +27,7 @@ class SearchRequest {
                 var responses: [SearchResponse] = []
                 for value in json["results"].arrayValue {
                     let movie = try JSONDecoder().decode(SearchResponse.self, from: value.rawData())
+                    print(value.rawValue)
                     responses.append(movie)
                 }
                 result(responses)
