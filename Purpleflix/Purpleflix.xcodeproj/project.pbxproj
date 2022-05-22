@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372FBEB8283A655E004DF66F /* TrendingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372FBEB7283A655E004DF66F /* TrendingResponse.swift */; };
+		372FBEBA283A6707004DF66F /* TrendingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372FBEB9283A6707004DF66F /* TrendingRequest.swift */; };
 		37B860CE283808EE00FB072C /* GeneralRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B860CD283808EE00FB072C /* GeneralRequest.swift */; };
 		37B860D22838329600FB072C /* ImageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B860D12838329600FB072C /* ImageProtocols.swift */; };
 		37B860DA283836C400FB072C /* PurpleflixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B860D9283836C400FB072C /* PurpleflixTests.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		372FBEB7283A655E004DF66F /* TrendingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingResponse.swift; sourceTree = "<group>"; };
+		372FBEB9283A6707004DF66F /* TrendingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRequest.swift; sourceTree = "<group>"; };
 		37B860CD283808EE00FB072C /* GeneralRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRequest.swift; sourceTree = "<group>"; };
 		37B860D12838329600FB072C /* ImageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProtocols.swift; sourceTree = "<group>"; };
 		37B860D7283836C400FB072C /* PurpleflixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurpleflixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +151,7 @@
 				37D9987B283585C50081143E /* SearchRequest.swift */,
 				37D9987D283586090081143E /* ImageRequest.swift */,
 				37B860CD283808EE00FB072C /* GeneralRequest.swift */,
+				372FBEB9283A6707004DF66F /* TrendingRequest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 				37E98DBA2836B1BE0027D825 /* MovieResponse.swift */,
 				37E98DC628371CF90027D825 /* WatchProviderResponse.swift */,
 				66E61A4E28382FF60029E74B /* TVResponse.swift */,
+				372FBEB7283A655E004DF66F /* TrendingResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,10 +309,12 @@
 				37B860D22838329600FB072C /* ImageProtocols.swift in Sources */,
 				37D9985F28356DB80081143E /* ViewController.swift in Sources */,
 				37D9985B28356DB80081143E /* AppDelegate.swift in Sources */,
+				372FBEBA283A6707004DF66F /* TrendingRequest.swift in Sources */,
 				37D9986528356DB80081143E /* Purpleflix.xcdatamodeld in Sources */,
 				37D9987A283585A30081143E /* TVRequest.swift in Sources */,
 				37D998772835854D0081143E /* MovieRequest.swift in Sources */,
 				37D9987C283585C50081143E /* SearchRequest.swift in Sources */,
+				372FBEB8283A655E004DF66F /* TrendingResponse.swift in Sources */,
 				37D9985D28356DB80081143E /* SceneDelegate.swift in Sources */,
 				37D9987E283586090081143E /* ImageRequest.swift in Sources */,
 			);
