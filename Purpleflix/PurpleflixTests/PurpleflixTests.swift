@@ -66,4 +66,14 @@ class PurpleflixTests: XCTestCase {
         XCTAssertNotNil(image)
     }
 
+    func testTrendingRequest() {
+        var trending: TrendingResponse?
+        let expectation = expectation(description: "TrendingDetails")
+        TrendingRequest.getTrending(mediaType: .all, timeWindow: .day) { trendingResponse in
+            trending = trendingResponse
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 5)
+        XCTAssertNotNil(trending)
+    }
 }
