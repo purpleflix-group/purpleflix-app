@@ -8,9 +8,9 @@
 import Foundation
 
 struct SearchResponse: Decodable {
-    var movieResponse: [MovieResponse]?
-    var tvResponse: [TVResponse]?
-    var personResponse: [PersonResponse]?
+    var movieResponses: [MovieResponse]? = []
+    var tvResponses: [TVResponse]? = []
+    var personResponses: [PersonResponse]? = []
 }
 
 struct PersonResponse: Decodable {

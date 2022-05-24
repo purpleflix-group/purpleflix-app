@@ -21,9 +21,8 @@ class ViewController: UIViewController {
 //            print(providers?["BR"])
 //        }
         
-        SearchRequest.getSearch(search: "Harry") { movie in
-            print(movie?.count) //all nil
-            print(movie?[10])
+        SearchRequest.getSearch(search: "Harry") { search in
+            print("TItle: \(search?.movieResponses?.first?.title) ")
         }
     }
 }

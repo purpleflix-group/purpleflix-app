@@ -10,7 +10,7 @@ import Alamofire
 
 class SearchRequest {
     
-    static func getSearch(search: String, result: @escaping (_ movie: [SearchResponse]?) -> Void) {
+    static func getSearch(search: String, result: @escaping (_ search: SearchResponse?) -> Void) {
         let url = "https://api.themoviedb.org/3/search/multi"
         let parameters = [
             "api_key": ApiKey.themoviedbkey,
@@ -24,13 +24,19 @@ class SearchRequest {
             }
             do {
                 let json = try JSON(data: data)
-                var responses: [SearchResponse] = []
+                var searchResponse = SearchResponse()
                 for value in json["results"].arrayValue {
-                    let movie = try JSONDecoder().decode(SearchResponse.self, from: value.rawData())
-                    print(value.rawValue)
-                    responses.append(movie)
+                    guard let mediaType = value["media_type"].string else { continue }
+                    //print(mediaType)
+                    if mediaType == "movie" {
+                        let movie = try JSONDecoder().decode(MovieResponse.self, from: value.rawData())
+                        print(movie.title)
+                        searchResponse.movieResponses?.append(movie)
+                    }
+                    
+                    
                 }
-                result(responses)
+                result(searchResponse)
             }
             catch {
                 print("[Error][GeneralRequest][getSearch]: \(error)")
