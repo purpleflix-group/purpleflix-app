@@ -27,14 +27,19 @@ class SearchRequest {
                 var searchResponse = SearchResponse()
                 for value in json["results"].arrayValue {
                     guard let mediaType = value["media_type"].string else { continue }
-                    //print(mediaType)
+                    
                     if mediaType == "movie" {
                         let movie = try JSONDecoder().decode(MovieResponse.self, from: value.rawData())
-                        print(movie.title)
                         searchResponse.movieResponses?.append(movie)
+                        
+                    }else if mediaType == "person" {
+                        let person = try JSONDecoder().decode(PersonResponse.self, from: value.rawData())
+                        searchResponse.personResponses?.append(person)
+                        
+                    }else if mediaType == "tv" {
+                        let tv = try JSONDecoder().decode(TVResponse.self, from: value.rawData())
+                        searchResponse.tvResponses?.append(tv)
                     }
-                    
-                    
                 }
                 result(searchResponse)
             }

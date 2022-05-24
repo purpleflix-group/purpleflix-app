@@ -16,7 +16,7 @@ struct TVResponse: Decodable {
     var name: String?
     var number_of_episodes: Int?
     var number_of_seasons: Int?
-    var origin_country: String?
+    var origin_country: [String]?
     var overview: String?
     var popularity: Double?
     var poster_path: String?

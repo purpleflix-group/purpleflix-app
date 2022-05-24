@@ -12,10 +12,3 @@ struct SearchResponse: Decodable {
     var tvResponses: [TVResponse]? = []
     var personResponses: [PersonResponse]? = []
 }
-
-struct PersonResponse: Decodable {
-    var profile_path: String?
-    var id: Int?
-    var name: String?
-    var popularity: Double?
-}

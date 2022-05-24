@@ -21,8 +21,10 @@ class ViewController: UIViewController {
 //            print(providers?["BR"])
 //        }
         
-        SearchRequest.getSearch(search: "Harry") { search in
-            print("TItle: \(search?.movieResponses?.first?.title) ")
+        SearchRequest.getSearch(search: "Leonardo") { search in
+            print("Title: \(search?.movieResponses?.first?.title) ")
+            print("Person: \(search?.personResponses?.first?.id)")
+            print("Tv: \(search?.tvResponses?.first?.name)")
         }
     }
 }
