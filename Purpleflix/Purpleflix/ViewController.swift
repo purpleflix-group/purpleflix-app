@@ -20,6 +20,12 @@ class ViewController: UIViewController {
 //        TVRequest.getWatchProvider(tvId: 34) { providers in
 //            print(providers?["BR"])
 //        }
+        
+        SearchRequest.getSearch(search: "Leonardo") { search in
+            print("Title: \(search?.movieResponses?.first?.title) ")
+            print("Person: \(search?.personResponses?.first?.id)")
+            print("Tv: \(search?.tvResponses?.first?.name)")
+        }
     }
 }
 
