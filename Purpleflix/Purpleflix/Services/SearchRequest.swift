@@ -2,7 +2,7 @@
 //  SearchRequest.swift
 //  Purpleflix
 //
-//  Created by Pedro Ésli Vieira do Nascimento on 18/05/22.
+//  Created by Gustavo da Silva Braghin on 21/05/22.
 //
 
 import Foundation
